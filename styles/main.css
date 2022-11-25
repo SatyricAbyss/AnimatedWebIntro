@@ -1,0 +1,13 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
+/* COMPONENTS */
+@import "components/loader.css";
+@import "components/text.css";
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Comfortaa', cursive;
+    background-color: #1e1e1e;
+}

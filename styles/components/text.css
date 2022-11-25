@@ -1,0 +1,20 @@
+.content {
+    margin: 45vh auto 0 auto;
+}
+
+.content .textSection {
+    font-size: 17.5px;
+    color: #fff;
+    text-align: center;
+}
+
+@media screen and (min-width:768px) {
+    .content {
+        margin: 47.5vh 0 0 25vw;
+    }
+
+    .content .textSection {
+        font-size: 30px;
+        text-align: unset;
+    }
+}
