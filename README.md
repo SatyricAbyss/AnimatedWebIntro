@@ -19,15 +19,15 @@ const textSpeed                 = 25;
 
 // First text
 const firstTextDelayInSeconds   = 0.1;
-let firstText                   = "Your first text here";
+let firstText                   = "Your first phrase goes here";
 
 // Second text and delay
 const secondTextDelayInSeconds  = 1;
-let secondText                  = "Your second text here";
+let secondText                  = "Your second phrase goes here";
 
 // Third text and delay
 const thirdTextDelayInSeconds   = 3;
-let thirdText                   = "Your third text here";
+let thirdText                   = "Your third phrase goes here";
 ```
 
 ### The loader
