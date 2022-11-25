@@ -31,7 +31,7 @@ let thirdText                   = "Your third phrase goes here";
 ```
 
 ### The loader
-The website contains a loader which can be changed with every version
+The website contains a loader which can be changed with every form
 of loader you prefer. You can simply copy-paste your custom loader in the
 `loaderSection` of the HTML and replace the code in `loader.css` to make
 sure your super awesome custom loader is implemented.
@@ -54,7 +54,8 @@ want to make this code open to use and improve for everyone. It's currently
 still under heavy development, but I think it's fun if others can improve
 this code in their own way!
 
-Link to my website:
-https://meltingcorestudios.com/opensource/
+Link to my website, where I use it with my own loader:
+https://meltingcorestudios.com/
 
-If you want to see it with a different loader, go to: https://meltingcorestudios.com/
+Link to this code in action:
+https://meltingcorestudios.com/opensource/
