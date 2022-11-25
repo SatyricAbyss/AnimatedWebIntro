@@ -55,4 +55,6 @@ still under heavy development, but I think it's fun if others can improve
 this code in their own way!
 
 Link to my website:
-https://meltingcorestudios.com/
+https://meltingcorestudios.com/opensource/
+
+If you want to see it with a different loader, go to: https://meltingcorestudios.com/
