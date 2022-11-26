@@ -19,7 +19,7 @@ const textSpeed                 = 25;
 
 // First text
 const firstTextDelayInSeconds   = 0.1;
-const firstText                   = "Your first phrase goes here";
+const firstText                 = "Your first phrase goes here";
 
 // Second text and delay
 const secondTextDelayInSeconds  = 1;
