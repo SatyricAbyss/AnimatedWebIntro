@@ -32,41 +32,46 @@ const loaderTimeOut = Math.floor(Math.random() * loaderMaxTime) + loaderMinTime;
 const loaderRemoval = loaderTimeOut + 250;
 const firstTextTimer = loaderRemoval + firstTextDelay;
 let textIterator = 0;
-
+let loadedText;
 
 function loadFirstText() {
-    if(textIterator < firstText.length) {
-        textSection.innerHTML += firstText.charAt(textIterator);
-        textIterator++;
-        setTimeout(loadFirstText, textSpeed);
-    } else if(textIterator === firstText.length) {
-        textSection.innerHTML +="<br/>";
-        var text2 = setTimeout(function() {
-            textIterator = 0;
-            loadSecondText();
-        }, secondTextDelay)
-    }
+    loadedText = firstText;
+    typeText();
 }
 
 function loadSecondText() {
-    if(textIterator < secondText.length) {
-        textSection.innerHTML += secondText.charAt(textIterator);
-        textIterator++;
-        setTimeout(loadSecondText, textSpeed);
-    } else if(textIterator === secondText.length) {
-        var text3 = setTimeout(function() {
-            textSection.innerHTML = "";
-            textIterator = 0;
-            loadThirdText();
-        }, thirdTextDelay)
-    }
+    loadedText = secondText;
+    typeText();
 }
 
 function loadThirdText() {
-    if(textIterator < thirdText.length) {
-        textSection.innerHTML += thirdText.charAt(textIterator);
+    loadedText = thirdText;
+    typeText();
+}
+
+function typeText() {
+    if(textIterator < loadedText.length) {
+        textSection.innerHTML += loadedText.charAt(textIterator);
         textIterator++;
-        setTimeout(loadThirdText, textSpeed);
+        setTimeout(typeText, textSpeed);
+    } else if(textIterator === loadedText.length) {
+        if(loadedText === "undefined") {
+            alert("Something went wrong...");
+        } else if(loadedText === firstText) {
+            textIterator = 0;
+
+            let text2 = setTimeout(function() {
+                textSection.innerHTML += "<br/>";
+                loadSecondText();
+            }, secondTextDelay);
+        } else if(loadedText === secondText) {
+            textIterator = 0;
+
+            let text3 = setTimeout(function() {
+                textSection.innerHTML = "";
+                loadThirdText();
+            }, thirdTextDelay);
+        }
     }
 }
 
@@ -88,9 +93,5 @@ function loadPage() {
 }
 
 window.addEventListener("load", (event) => {
-    if (window.location.protocol == 'http:') {
-        window.location.href = window.location.href.replace('http:', 'https:');
-    }
-
     loadPage();
 });
