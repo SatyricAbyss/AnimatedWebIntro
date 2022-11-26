@@ -8,15 +8,15 @@ const textSpeed                 = 25;
 
 // First text
 const firstTextDelayInSeconds   = 0.1;
-let firstText                   = "Your first phrase goes here";
+const firstText                   = "Your first phrase goes here";
 
 // Second text and delay
 const secondTextDelayInSeconds  = 1;
-let secondText                  = "Your second phrase goes here";
+const secondText                  = "Your second phrase goes here";
 
 // Third text and delay
 const thirdTextDelayInSeconds   = 3;
-let thirdText                   = "Your third phrase goes here";
+const thirdText                   = "Your third phrase goes here";
 
 // -----------------------------
 // DO NOT TOUCH BELOW SETTINGS
